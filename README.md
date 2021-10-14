@@ -11,5 +11,5 @@ You need to have python 3 installed in your machine to run the code
 Navigate to the repository location, then run 
 
 ```bash
-python3 index.py
+python3 main.py
 ```
