@@ -1,8 +1,14 @@
+import re
+
 def adicionar_elemento(lista: list, elemento: str) -> bool:
-    
-    lista = [elemento]
-    if lista.isupper in 0:
-        return True
+    if re.search(r"[A-Z]", elemento[0]) is not None:
+        if re.search(r"(?=.*\\d)(?=.*[-+_!@#$%^&*., ?]).+$") is not None:
+            return False
+            
+        else:
+            lista.append(elemento)
+            return True
+        
     else:
         return False
     '''
